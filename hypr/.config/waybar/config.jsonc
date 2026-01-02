@@ -4,15 +4,14 @@
   "modules-center": ["hyprland/window"],
   "modules-right": ["network","bluetooth", "pulseaudio", "backlight", "battery", "clock"],
   "clock": {
-    "format": "<span foreground='#f5c2e7'>   </span>{:L%a %d-%H:%M}",
+    "format": "<span foreground='#f5c2e7'>   </span>{:L%a %d-%H:%M}", // add L to handle locale
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     "locale": "fr_FR.UTF-8"
   },
   "backlight": {
 	  "device": "intel_backlight",
 	  "format": "{icon}  {percent}%",
-	  "format-icons": ["󰹑", "󰹑"]
-    },
+	  "format-icons": ["󰹑 ", "󰹑 "]
   },
   "battery": {
     "states": {
