@@ -76,6 +76,16 @@ button:hover {
   padding-right: 4px;
 }
 
+#bluetooth {
+    color: @blue;
+    border-bottom: 2px solid @blue;
+}
+
+#backlight {
+    color: @white;
+    border-bottom: 2px solid @white;
+} 
+
 #clock {
     color: @maroon;
     border-bottom: 2px solid @maroon;
@@ -87,8 +97,8 @@ button:hover {
 }
 
 #pulseaudio {
-    color: @blue;
-    border-bottom: 2px solid @blue;
+    color: @pink;
+    border-bottom: 2px solid @pink;
 }
 
 #network {
