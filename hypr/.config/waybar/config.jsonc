@@ -9,7 +9,7 @@
     "locale": "fr_FR.UTF-8"
   },
   "backlight": {
-	  "device": "intel_backlight",
+//	  "device": "intel_backlight",
 	  "format": "{icon}  {percent}%",
 	  "format-icons": ["󰹑 ", "󰹑 "]
   },

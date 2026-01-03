@@ -80,7 +80,9 @@ if [ -n "$selected" ]; then
     # Ensure a valid wallpaper was found before proceeding
     if [ -n "$original_path" ]; then
         # Set wallpaper using swww with the original file
-        hyprctl hyprpaper wallpaper "eDP-1, $original_path, cover"
+        monitor=$(hyprctl monitors | grep Monitor |  awk {'print $2'})
+        #hyprctl hyprpaper wallpaper "eDP-1, $original_path, cover"
+        hyprctl hyprpaper wallpaper "$monitor, $original_path, cover"
 
         # Save the selection for persistence
         echo "$original_path" > "$HOME/.cache/current_wallpaper"
