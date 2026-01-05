@@ -88,11 +88,11 @@ local plugins = {
   { 'nvim-telescope/telescope.nvim', tag = '0.1.5', dependencies = { 'nvim-lua/plenary.nvim' } },                                       -- Fuzzy Finding: Need to install ripgrep on the OS
   { 'nvim-telescope/telescope-media-files.nvim' },                                                                                      -- Display images
   { 'nvim-telescope/telescope-ui-select.nvim' },                                                                                        -- UI for lsp
-  { 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' },                                                                           -- Syntax Highlight: Need to install build-base on the OS
+  { 'nvim-treesitter/nvim-treesitter', branch = 'master', build = ':TSUpdate' },                                                                           -- Syntax Highlight: Need to install build-base on the OS
   { 'nvim-neo-tree/neo-tree.nvim', dependencies = { 'nvim-lua/plenary.nvim', 'nvim-tree/nvim-web-devicons', 'MunifTanjim/nui.nvim'}},   -- File Browser
   { 'williamboman/mason.nvim' },                                                                                                        -- Install/Manage Language Servers
   { 'williamboman/mason-lspconfig.nvim' },                                                                                              -- Need to install unzip on the OS
-  { 'neovim/nvim-lspconfig' },                                                                                                          -- Link Neovim/Language Servers
+--  { 'neovim/nvim-lspconfig' },                                                                                                          -- Link Neovim/Language Servers
   { 'nvimtools/none-ls.nvim' },                                                                                                         -- Wrapper Around CLI Linter/Other Tools
   { 'hrsh7th/cmp-nvim-lsp' },                                                                                                           -- ??
   { 'hrsh7th/nvim-cmp' },                                                                                                               -- Completion Engine
@@ -284,8 +284,8 @@ require('mason-lspconfig').setup({
   auto_install = true,
 })
 local capacities = require('cmp_nvim_lsp').default_capabilities()
-local lspconfig = require('lspconfig')
-lspconfig.ts_ls.setup({ capacities = capacities })
+-- local lspconfig = require('lspconfig')
+-- lspconfig.ts_ls.setup({ capacities = capacities })
 vim.keymap.set("n","K",vim.lsp.buf.hover, {})
 vim.keymap.set({'n','v'},"<leader>a",vim.lsp.buf.code_action, {})
 --┌─────────┐
