@@ -11,4 +11,6 @@ sudo pacman -S texlive-fontsextra extra/texlive-latex extra/texlive-latexextra e
   gwenview \
   dolphin \
   virt-viewer spice-gtk spice spicy-launcher spicy qemu \
-  mplayer vlc
+  mplayer vlc \
+  docker docker-compose \
+  yt-dlp
