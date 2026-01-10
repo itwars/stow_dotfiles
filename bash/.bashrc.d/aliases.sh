@@ -2,7 +2,7 @@ alias ls='ls'
 alias ll='ls -alh'
 alias tmux-stop='tmux kill-server'
 alias weather='curl wttr.in/Bordeaux'
-alias hugo-server="hugo server --watch --disableFastRender --bind 0.0.0.0 --baseURL http://$(ifconfig|grep 'inet '|grep -v '127.0.0.1'|awk '{print $2}')"
+# alias hugo-server="hugo server --watch --disableFastRender --bind 0.0.0.0 --baseURL http://$(ifconfig|grep 'inet '|grep -v '127.0.0.1'|awk '{print $2}')"
 alias grep='grep --color=auto'
 alias pro='cd ~/Documents/projects'
 alias web='python3 -m http.server 8000 --bind 0.0.0.0'
