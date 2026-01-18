@@ -12,8 +12,8 @@ export _Z_OWNER=`whoami`
 
 # Golang setup 
 export GOPATH=$HOME/Documents/projects/lang/golang
-export GOROOT=$HOME/.local/lib/go_modules/
+export GOROOT=$HOME/.lang/go/
 export PATH=$PATH:$GOPATH/bin
 
 # Rust setup 
-export PATH=$HOME/.cargo/bin:$PATH
+export PATH=$HOME/.lang/cargo/bin:$PATH
