@@ -1,7 +1,7 @@
 @import "mocha.css"; 
 
 * {
-    font-family: "MesloLGS Nerd Font Mono Bold";
+    font-family: "VictorMono Nerd Font";
     font-size: 16px;
     min-height: 0;
     font-weight: bold;
@@ -14,6 +14,16 @@ window#waybar {
     transition-property: background-color;
     transition-duration: 0.1s;
     border-bottom: 1px solid @overlay1;
+    border-radius: 1rem;
+}
+
+#waybar > box {
+  margin: 2px 8px 2px 8px;
+  border-radius: 1rem;
+  background-color: @background;
+  box-shadow: 1px 1px 1px 1px rgba( 255, 255, 255, 0.5);
+  transition-property: background-color;
+  transition-duration: .5s;
 }
 
 #window {
