@@ -201,3 +201,52 @@ function upgrade()
   sudo snap refresh 
   flatpak update 
 }
+
+function apk()
+{
+  distro=`lsb_release -i | cut -d':' -f2 | cut -c2- | tr '[:upper:]' '[:lower:]'` 
+  if [ $1 = 'upgrade' ]; then
+    if [ $distro = 'alpine' ]; then
+      sudo apk upgrade ${@:2}
+    fi
+    if [ $distro = 'debian' ]; then
+      sudo apt upgrade
+    fi
+    if [ $distro = 'cachyos' ]; then
+      sudo pacman -Syu
+    fi
+  fi
+  if [ $1 = 'add' ]; then
+    if [ $distro = 'alpine' ]; then
+      sudo apk add ${@:2}
+    fi
+    if [ $distro = 'debian' ]; then
+      sudo apt install ${@:2}
+    fi
+    if [ $distro = 'cachyos' ]; then
+      sudo pacman -S ${@:2}
+    fi
+  fi
+  if [ $1 = 'search' ]; then
+    if [ $distro = 'alpine' ]; then
+      apk search ${@:2}
+    fi
+    if [ $distro = 'debian' ]; then
+      apt search ${@:2}
+    fi
+    if [ $distro = 'cachyos' ]; then
+      pacman -Ss ${@:2}
+    fi
+  fi
+  if [ $1 = 'del' ]; then
+    if [ $distro = 'alpine' ]; then
+      sudo apk del ${@:2}
+    fi
+    if [ $distro = 'debian' ]; then
+      sudo apt autoremove ${@:2}
+    fi
+    if [ $distro = 'cachyos' ]; then
+      sudo pacman -R ${@:2}
+    fi
+  fi
+}
