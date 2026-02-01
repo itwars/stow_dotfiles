@@ -9,20 +9,12 @@
 
 window#waybar {
     background-color: transparent;
-    /*background-color: @crust;*/
-/*    color: @overlay0;
-    transition-property: background-color;
-    transition-duration: 0.1s;
-    border-bottom: 1px solid @overlay1;
-    border-radius: 10px;*/
 }
 
 window#waybar > box {
   border-radius: 50px;
-  margin: 4px 8px 8px 8px;
-    background-color: rgba(255, 32, 32, 0.75);
-  box-shadow: 5px 5px 5px 5px rgba( 5, 5, 5, 0.9);
- /*   box-shadow: 4px 4px 2px 1px #101010;*/
+  background-color: @crust;
+  box-shadow: 3px 3px rgba(100,100,100,0.9);
 }
 
 #window {
@@ -98,6 +90,7 @@ button:hover {
 #clock {
     color: @maroon;
     border-bottom: 2px solid @maroon;
+    margin-right: 20;
 }
 
 #clock.date {
@@ -106,8 +99,8 @@ button:hover {
 }
 
 #pulseaudio {
-    color: @pink;
-    border-bottom: 2px solid @pink;
+    color: @green;
+    border-bottom: 2px solid @green;
 }
 
 #network {
@@ -131,7 +124,7 @@ button:hover {
 
 /* If workspaces is the leftmost module, omit left margin */
 .modules-left>widget:first-child>#workspaces {
-    margin-left: 0;
+    margin-left: 20;
 }
 
 /* If workspaces is the rightmost module, omit right margin */
