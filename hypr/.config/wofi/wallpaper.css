@@ -3,6 +3,7 @@ window {
     background-color: #ee00aa;
     border-radius: 8px;
     border: 2px solid #313244;
+  background-color: transparent;
 }
 
 #input {
@@ -16,10 +17,13 @@ window {
 
 #inner-box {
   margin: 0px;
+    background-color: #ee00aa;
 }
 
 #outer-box {
   margin: 0px;
+    background-color: #ee00aa;
+    border-radius: 4px;
 }
 
 #scroll {

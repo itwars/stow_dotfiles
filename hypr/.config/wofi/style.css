@@ -52,17 +52,17 @@
 @define-color	crust-rgb  rgb(17, 17, 27);
 
 * {
-  font-family: 'CaskaydiaCove Nerd Font', monospace;
-  font-size: 18px;
+  font-family: "VictorMono Nerd Font";
+  font-size: 28px;
 }
 
 /* Window */
 window {
   margin: 0px;
-  padding: 10px;
-  border: 2px solid @lavender;
-  border-radius: 8px;
-  background-color: @base;
+  padding: 1px;
+  border: 5px solid @lavender;
+  border-radius: 10px;
+  background-color: transparent;
 }
 
 /* Inner Box */
@@ -79,6 +79,7 @@ window {
   padding: 10px;
   border: none;
   background-color: @base;
+  border-radius: 10px;
 }
 
 /* Scroll */
@@ -101,7 +102,7 @@ window {
 
 #input image {
     border: none;
-    color: @red;
+    color: @lavender;
 }
 
 #input * {
