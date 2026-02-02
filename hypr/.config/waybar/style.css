@@ -15,7 +15,7 @@ window#waybar {
 
 window#waybar > box {
   border-radius: 50px;
-  background-color: @crust;
+  background-color: @base;
   box-shadow: 5px 5px rgba(45,45,45,0.7);
   margin-left: 15px;
   margin-right: 15px;

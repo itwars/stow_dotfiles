@@ -3,13 +3,14 @@ function neoclean(){
    rm -rf ~/.local/state/nvim
    rm -rf ~/.cache/nvim
 }
-function go() {
-    if [ $1 = 'build' ]; then
-        command go build -ldflags="-s -w" ${@:2}
-    else
-        command go $@
-    fi
-}
+
+#function go() {
+#    if [ $1 = 'build' ]; then
+#        command go build -ldflags="-s -w" ${@:2}
+#    else
+#        command go $@
+#    fi
+#}
 function goinit() {
     mkdir -p $1
     cd $1
@@ -193,6 +194,11 @@ function xdccmoviegods()
 function xdccbeast()
 {
   xdccJS --host irc.eu.abjects.net --port 6697 --tls --wait 2 --nickname slave --path ~/Downloads/weechat/ --channel beast-xdcc beast-chat --bot "$1" --download $2
+}
+
+function xdcczombie()
+{
+  xdccJS --host irc.abandoned-irc.net --port 6697 --tls --wait 2 --nickname slave --path ~/Downloads/weechat/ --channel zombie-warez zw-chat --bot "$1" --download $2
 }
 
 function upgrade()

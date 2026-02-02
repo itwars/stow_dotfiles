@@ -55,7 +55,7 @@ selected=$(generate_menu | wofi --show dmenu \
     --allow-images \
     --insensitive \
     --sort-order=default \
-    --prompt "Select Wallpaper" \
+    --prompt "Sélection du Wallpaper" \
     --conf ~/.config/wofi/wallpaper.conf \
     --style ~/.config/wofi/wallpaper.css \
   )
