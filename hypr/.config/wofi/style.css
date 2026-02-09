@@ -58,10 +58,10 @@
 
 /* Window */
 window {
-  margin: 0px;
+/*  margin: 0px;
   padding: 1px;
   border: 5px solid @lavender;
-  border-radius: 10px;
+  border-radius: 10px;*/
   background-color: transparent;
 }
 
@@ -75,11 +75,13 @@ window {
 
 /* Outer Box */
 #outer-box {
-  margin: 5px;
-  padding: 10px;
-  border: none;
+  margin: 50px;
+  padding: 5px;
   background-color: @base;
-  border-radius: 10px;
+  border-radius: 4px;
+  border: 4px solid #aa0077;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.9);
+
 }
 
 /* Scroll */
