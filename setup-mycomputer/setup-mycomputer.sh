@@ -13,4 +13,4 @@ sudo pacman -S texlive-fontsextra extra/texlive-latex extra/texlive-latexextra e
   virt-viewer spice-gtk spice spicy-launcher spicy qemu \
   mplayer vlc \
   docker docker-compose \
-  yt-dlp
+  yt-dlp gimp pipe-rename ijq okular cups skanlite
