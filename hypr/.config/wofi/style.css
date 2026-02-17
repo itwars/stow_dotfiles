@@ -87,9 +87,9 @@ window {
 /* Scroll */
 #scroll {
   margin: 0px;
-  padding: 10px;
+  padding: 0px;
   border: none;
-  background-color: @base;
+  background-color: transparent;
 }
 
 /* Input */
@@ -99,16 +99,12 @@ window {
   border: none;
   border-radius: 0.1em;
   color: @text;
-  background-color: @base;
+  background-color: @lavender;
 }
 
 #input image {
     border: none;
     color: @lavender;
-}
-
-#input * {
-  outline: 4px solid @red!important;
 }
 
 /* Text */
@@ -137,5 +133,5 @@ window {
 }
 
 #entry:drop(active) {
-  background-color: @lavender!important;
+  background-color: @lavender;
 }
