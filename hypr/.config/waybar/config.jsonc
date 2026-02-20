@@ -2,6 +2,7 @@
   "reload_style_on_change": true,
   "layer": "top",
   "width": 1440,
+  "height": 48,
   "position": "top",
   "margin-top": 1,
   "margin-left": 10,
@@ -10,6 +11,11 @@
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["hyprland/window"],
   "modules-right": ["network","bluetooth", "pulseaudio", "backlight", "battery", "clock"],
+  "hyprland/window": {
+    "format": "{title}",
+    "max-length": 20,
+    "icon": true
+  },
   "clock": {
     "format": "<span foreground='#f5c2e7'>   </span>{:L%a %d - %H:%M}", // add L to handle locale
     "tooltip-format": "<tt>{calendar}</tt>",
