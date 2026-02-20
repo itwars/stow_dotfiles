@@ -14,3 +14,4 @@ alias radio-intense="mplayer http://secure.live-streams.nl/flac.flac -cache 5000
 alias radio-paradise="mplayer http://stream-dc1.radioparadise.com/aac-320 -cache 5000"
 alias vi="nvim"
 alias open="xdg-open"
+alias iso-usbkey="sudo env WAYLAND_DISPLAY="$XDG_RUNTIME_DIR/$WAYLAND_DISPLAY" XDG_RUNTIME_DIR=/run/user/0 isoimagewriter"

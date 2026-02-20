@@ -162,24 +162,24 @@ LANG=fr_FR.UTF-8 snap list --all | awk '/disabled/{print $1, $3}' |
   done
 }
 
-ssh() {
-    if [ -f "$HOME/.sshtools/.bashrc_remote" ] && [ -f "$HOME/.sshtools/.vimrc_remote" ] && [ -f "$HOME/.sshtools/.webshare.py" ]; then
-        # Compress and encode files
-        REMOTE_BASHRC=$(gzip -c "$HOME/.sshtools/.bashrc_remote" | base64)
-        REMOTE_VIMRC=$(gzip -c "$HOME/.sshtools/.vimrc_remote" | base64)
-        REMOTE_WEBSHARE=$(gzip -c "$HOME/.sshtools/.webshare.py" | base64)
-        /usr/bin/ssh -t $1 "
-            echo '$REMOTE_BASHRC' | base64 -d | gunzip > /tmp/.bashrc_remote && \
-            echo '$REMOTE_VIMRC' | base64 -d | gunzip > /tmp/.vimrc_remote && \
-            echo '$REMOTE_WEBSHARE' | base64 -d | gunzip > /tmp/webshare.py && \
-            bash --rcfile /tmp/.bashrc_remote
-        "
-    else
-        /usr/bin/ssh "$@"
-    fi
-}
-
-alias sshc='/usr/bin/ssh'
+#ssh() {
+#    if [ -f "$HOME/.sshtools/.bashrc_remote" ] && [ -f "$HOME/.sshtools/.vimrc_remote" ] && [ -f "$HOME/.sshtools/.webshare.py" ]; then
+#        # Compress and encode files
+#        REMOTE_BASHRC=$(gzip -c "$HOME/.sshtools/.bashrc_remote" | base64)
+#        REMOTE_VIMRC=$(gzip -c "$HOME/.sshtools/.vimrc_remote" | base64)
+#        REMOTE_WEBSHARE=$(gzip -c "$HOME/.sshtools/.webshare.py" | base64)
+#        /usr/bin/ssh -t $1 "
+#            echo '$REMOTE_BASHRC' | base64 -d | gunzip > /tmp/.bashrc_remote && \
+#            echo '$REMOTE_VIMRC' | base64 -d | gunzip > /tmp/.vimrc_remote && \
+#            echo '$REMOTE_WEBSHARE' | base64 -d | gunzip > /tmp/webshare.py && \
+#            bash --rcfile /tmp/.bashrc_remote
+#        "
+#    else
+#        /usr/bin/ssh "$@"
+#    fi
+#}
+#
+#alias sshc='/usr/bin/ssh'
 
 function xdccelite()
 {
