@@ -15,3 +15,5 @@ alias radio-paradise="mplayer http://stream-dc1.radioparadise.com/aac-320 -cache
 alias vi="nvim"
 alias open="xdg-open"
 alias iso-usbkey="sudo env WAYLAND_DISPLAY="$XDG_RUNTIME_DIR/$WAYLAND_DISPLAY" XDG_RUNTIME_DIR=/run/user/0 isoimagewriter"
+alias tv="export TMDB_API_KEY="44a5b4ae4ecd5a73272bf5ea75e5a8e7"; ~/tmdb_episodes.sh ~/series.txt"
+alias opencode="docker run -it --rm -v $HOME/.config/opencode:/root/.config/opencode -v $HOME/Documents/projects/lang/opencode:/root/.local/share/opencode -v $HOME/Documents/projects/lang/opencode-output:/root/output ghcr.io/anomalyco/opencode"
