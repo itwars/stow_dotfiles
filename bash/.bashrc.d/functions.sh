@@ -252,7 +252,7 @@ function apk()
       sudo apt autoremove ${@:2}
     fi
     if [ $distro = 'cachyos' ]; then
-      sudo pacman -R ${@:2}
+      sudo pacman -Runs ${@:2}
     fi
   fi
 }
