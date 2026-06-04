@@ -4,8 +4,8 @@
      /*"source": "~/.cache/wallpaper-selector/lofiwallpaper.avif",*/
      "source": "~/.config/fastfetch/kratos.avif",
      "type": "kitty-icat",
-     "width": 40,
-     "height": 90
+     "width": 35,
+     "height": 60
  },
   "modules": [
     "title",
