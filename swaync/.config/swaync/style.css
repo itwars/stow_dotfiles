@@ -18,8 +18,8 @@
 .control-center .notification-row:focus,
 .control-center .notification-row:hover {
     opacity: 1;
-    background: @noti-bg;
-    border-radius: 10px
+    background: @noti-bg; 
+    border-radius: 50px 50px 50px 50px / 30px 30px 30px 30px;
 }
 
 .notification-row {
@@ -28,7 +28,7 @@
 
 .notification {
 	/*color: @text-color;*/
-    background: #d09a9a;
+    background: #ff60ff;
     padding: 3px 10px 3px 6px;
     border-radius: 10px;
     border: 2px solid @noti-border-color;
@@ -151,14 +151,18 @@
     font-weight: normal;
     background: transparent;
     color: @text-color;
-    text-shadow: none
+    text-shadow: none; 
+  background: #C44D58;
 }
 
 .control-center {
-    background: @noti-bg;
-    border: 1px solid @noti-border-color;
-	color: @text-color;
+    background: @noti-bg; 
+    border: 5px solid transparent;
     border-radius: 10px;
+    border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image-slice: 1;
+	  color: @text-color;
+    box-shadow: 5px 5px 3px rgba(10,10,10,.9);
 }
 
 .control-center-list {
