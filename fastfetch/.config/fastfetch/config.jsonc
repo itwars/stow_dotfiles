@@ -1,10 +1,9 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
  "logo": {
-     "source": "~/.config/fastfetch/kratos.png",
+     "source": "~/.config/fastfetch/kratos.avif",
      "type": "kitty-icat",
-     "width": 30,
-     "height": 60
+     "width": 35
  },
   "modules": [
     "title",

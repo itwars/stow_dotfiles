@@ -52,7 +52,7 @@ button {
 button:hover {
     background: inherit;
     color: @mauve;
-    border-top: 2px solid @mauve;
+    /*border-top: 2px solid @mauve;*/
 }
 
 #workspaces button {
@@ -62,13 +62,13 @@ button:hover {
 #workspaces button.focused {
     background-color: rgba(0, 0, 0, 0.3);
     color: @rosewater;
-    border-top: 2px solid @rosewater;
+    /*border-top: 2px solid @rosewater;*/
 }
 
 #workspaces button.active {
     background-color: rgba(0, 0, 0, 0.3);
     color: @mauve;
-    border-top: 2px solid @mauve;
+    /*border-top: 2px solid @mauve;*/
 }
 
 #workspaces button.urgent {
@@ -99,33 +99,33 @@ button:hover {
 
 #bluetooth {
     color: @blue;
-    border-bottom: 2px solid @blue;
+    /*border-bottom: 2px solid @blue;*/
 }
 
 #backlight {
     color: @white;
-    border-bottom: 2px solid @white;
+    /*border-bottom: 2px solid @white;*/
 } 
 
 #clock {
     color: @maroon;
-    border-bottom: 2px solid @maroon;
+    /*border-bottom: 2px solid @maroon;*/
     margin-right: 20px;
 }
 
 #clock.date {
     color: @mauve;
-    border-bottom: 2px solid @mauve;
+    /*border-bottom: 2px solid @mauve;*/
 }
 
 #pulseaudio {
     color: @green;
-    border-bottom: 2px solid @green;
+    /*border-bottom: 2px solid @green;*/
 }
 
 #network {
     color: @yellow;
-    border-bottom: 2px solid @yellow;
+    /*border-bottom: 2px solid @yellow;*/
 }
 
 #idle_inhibitor {
@@ -139,7 +139,7 @@ button:hover {
 
 #battery {
     color: @green;
-    border-bottom: 2px solid @green;
+    /*border-bottom: 2px solid @green;*/
 }
 
 /* If workspaces is the leftmost module, omit left margin */
