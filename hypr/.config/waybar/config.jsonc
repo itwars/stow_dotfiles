@@ -11,6 +11,20 @@
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["hyprland/window"],
   "modules-right": ["network","bluetooth", "pulseaudio", "backlight", "battery", "clock"],
+  "hyprland/workspaces" : {
+    "on-click": "activate",
+    "active-only": false,
+    "all-outputs": true,
+    "format": "{}",
+    "format-icons": {
+		  "urgent": "",
+			"active": "",
+			"default": ""
+      },
+    "persistent-workspaces": {
+      "*": 5
+    }
+  },
   "hyprland/window": {
     "format": "{title}",
     "max-length": 20,
