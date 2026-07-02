@@ -144,7 +144,7 @@ function pdfcompress ()
    gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=$1.compressed.pdf $1
 }
 function ping_range() {
-   for i in {1..254} ;do (ping 192.168.255.$i -c 2 -t 10  >/dev/null && printf "192.168.255.%03d\n" $i &) ;done | sort
+   for i in {1..254} ;do (ping 192.168.1.$i -c 2 -t 10  >/dev/null && printf "192.168.1.%03d\n" $i &) ;done | sort
 }
 function ansi_color() {
     for i in {0..255}; do
