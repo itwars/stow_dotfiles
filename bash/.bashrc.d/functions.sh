@@ -256,3 +256,22 @@ function apk()
     fi
   fi
 }
+
+# fix tmux / hyprland issue can't connect socket
+function hyprctl() 
+{
+    HYPRLAND_INSTANCE_SIGNATURE=$(command ls -t "$XDG_RUNTIME_DIR/hypr/" 2>/dev/null | head -1) \
+        command hyprctl "$@"
+}
+
+function llama()
+{
+#    -c 16384 \
+  ~/Documents/projects/github/llama.cpp/build/bin/llama-server -m "$1" \
+    -ngl 99 \
+    -fa on \
+    --cache-type-k q8_0 --cache-type-v q8_0 \
+    --threads 6 \
+    --jinja \
+    --host 0.0.0.0 --port 8081
+}

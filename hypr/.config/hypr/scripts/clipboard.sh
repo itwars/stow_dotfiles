@@ -21,5 +21,9 @@ if [ -n "$bot" ] && [ -n "$slot" ]; then
     notify-send "XDCC démarre sur Elite" -i  /usr/share/icons/breeze/places/22/network-server.svg 
      xdccJS --host irc.rizon.net --port 6697 --tls --wait 2 --nickname slave --path ~/Downloads/weechat/ --channel ELITEWAREZ ELITE-CHAT --bot "$bot" --download "$slot" &
   fi
+  if [[ $bot == "[MG]"* ]]; then 
+    notify-send "XDCC démarre sur MovieGods" -i  /usr/share/icons/breeze/places/22/network-server.svg 
+     xdccJS --host irc.eu.abjects.net --port 6697 --tls --wait 2 --nickname slave --path ~/Downloads/weechat/ --channel MOVIEGODS MG-CHAT --bot "$bot" --download "$slot" &
+  fi
 fi
 
